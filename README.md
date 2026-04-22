@@ -37,6 +37,7 @@ Standard accuracy is a misleading metric in predictive maintenance. The model wa
 
 <img width="384" height="313" alt="Screenshot 2026-04-22 124124" src="https://github.com/user-attachments/assets/8ce2ccb3-a70f-4a8e-8d3d-44dd1bffb373" />
 
+
 <img width="823" height="311" alt="Screenshot 2026-04-22 123528" src="https://github.com/user-attachments/assets/9e027ed8-c6f6-4223-8394-4e2c870fc739" />
 
 
