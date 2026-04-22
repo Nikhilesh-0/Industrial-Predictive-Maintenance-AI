@@ -1,4 +1,4 @@
-# ⚙️ Intelligent Predictive Maintenance in IIoT
+# Intelligent Predictive Maintenance in IIoT
 **Solving the Accuracy Paradox in Highly Imbalanced Industrial Datasets**
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
@@ -6,12 +6,12 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data_Manipulation-green.svg)
 ![Imbalanced-Learn](https://img.shields.io/badge/SMOTE-Imbalance_Handling-red.svg)
 
-## 📌 The Problem: The Accuracy Paradox
+## The Problem: The Accuracy Paradox
 In industrial manufacturing, machines operate normally the vast majority of the time. In the **AI4I 2020 Predictive Maintenance Dataset** used for this project, the baseline failure rate is only **3.39%**. 
 
 Training a standard classification model on this data results in the "Accuracy Paradox": a model that blindly guesses "Normal" every time will achieve 96.6% accuracy, yet fail to catch a single catastrophic machine breakdown. This project aims to engineer a mathematically rigorous ML pipeline that prioritizes **Recall** to predict actual failures before they happen.
 
-## 🔬 Methodology & Engineering
+## Methodology & Engineering
 1. **Physics-Driven EDA:** Rather than relying on basic histograms, I utilized Kernel Density Estimation (KDE) to map the physical trigger points of failure, proving that breakdowns occur at the extremes of Torque and Rotational Speed.
    <img width="830" height="307" alt="Screenshot 2026-04-22 124042" src="https://github.com/user-attachments/assets/54e02270-0ce2-4e17-9a50-e2ebc38aecdf" />
 
@@ -26,7 +26,7 @@ Training a standard classification model on this data results in the "Accuracy P
    <img width="460" height="304" alt="Screenshot 2026-04-22 124000" src="https://github.com/user-attachments/assets/72bc742b-acf4-46b8-8270-921b5991b423" />
 
 
-## 📊 Model Evaluation & Business Impact
+## Model Evaluation & Business Impact
 Standard accuracy is a misleading metric in predictive maintenance. The model was evaluated based on the industrial cost of False Positives (wasted inspection time) versus False Negatives (destroyed machinery).
 
 * **Prioritized Recall (76%):** The model successfully catches the vast majority of true machine failures.
@@ -36,10 +36,8 @@ Standard accuracy is a misleading metric in predictive maintenance. The model wa
 <img width="823" height="311" alt="Screenshot 2026-04-22 123528" src="https://github.com/user-attachments/assets/9e027ed8-c6f6-4223-8394-4e2c870fc739" />
 
 
-## 🚀 How to Run Locally
+## How to Run Locally
 1. Clone the repository: `git clone https://github.com/yourusername/Predictive-Maintenance-IIoT.git`
 2. Install dependencies: `pip install pandas numpy scikit-learn seaborn matplotlib imbalanced-learn`
 3. Run the Jupyter Notebook: `jupyter notebook Predictive_Maintenance.ipynb`
 
----
-*Developed for INT375 - Continuous Assessment*
